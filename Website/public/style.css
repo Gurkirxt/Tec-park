@@ -1,18 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 * {
-  font-size: 32;
+    font-size: 32;
 }
 
 body {
-  background-color: #101629;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+    background-color: #101629;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-#tec-park {
-  color: #fff;
-  font-family: Lato;
-  font-size: 3rem;
-  font-weight: 700;
+.tec-park {
+    color: #fff;
+    font-family: Lato;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+
+/**/ 
+
+.login {
+    /* button-primary */
+
+    position: absolute;
+    width: 335px;
+    height: 55px;
+    left: 20px;
+    top: 727px;
+
+
+
+    /* Rectangle */
+
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    /* Blue */
+    background: #567DF4;
+    border-radius: 27.5px;
+
+
+    /* Register */
+
+    position: absolute;
+    left: 41.19%;
+    right: 41.19%;
+    top: 25.45%;
+    bottom: 25.45%;
+
+    /* Link */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 170%;
+    /* or 27px */
+    text-align: center;
+
+    /* White */
+    color: #FFFFFF;
+
+
 }

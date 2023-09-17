@@ -1,15 +1,18 @@
-*{
-    background-color: black;
+* {
+  font-size: 32;
 }
 
-h1 {
-    margin: 0;
-    padding: 0;
-    size: 1rem;
-    color: white;
-    border: red ;
-    box-sizing: 10
-    ;
-    text-align: center;
-    justify-content: center; 
+body {
+  background-color: #101629;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#tec-park {
+  color: #fff;
+  font-family: Lato;
+  font-size: 3rem;
+  font-weight: 700;
 }

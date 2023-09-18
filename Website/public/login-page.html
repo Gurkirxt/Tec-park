@@ -2,9 +2,9 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
-<script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth-compat.js"></script>
     <title>Login Form</title>
     <script src="https://kit.fontawesome.com/83fdd24fa9.js" crossorigin="anonymous"></script>
 </head>
@@ -12,7 +12,7 @@
 <div class="main-box">
   <div class="form-box">
     <h1 id="title">Sign Up</h1>
-    <form >
+    <form>
         <div class="input-group">
             <div class="input-field" id="nameField">
                 <i class="fa-solid fa-user"></i>
@@ -31,73 +31,30 @@
             <p>Forgot Password <a href="#">Click Here!</a></p>
         </div>
         <div class="btn-field">
-            <button type="button"  id="signupBtn" >Sign Up</button>
-            <button type="button"  id="signinBtn" class="disable">Sign In</button>
+            <button type="button" id="signupBtn">Sign Up</button>
+            <button type="button" id="signinBtn" class="disable">Sign In</button>
         </div>
     </form>
    </div> 
 </div> 
 
 <script>
-/*setting up firebase*/
-
-const firebaseApp = firebase.initializeApp({ 
-    apiKey: "AIzaSyCfchBLTflNyZ-P1nOXmMFDSLJAob3j10g",
-  authDomain: "tec-park.firebaseapp.com",
-  databaseURL: "https://tec-park-default-rtdb.firebaseio.com",
-  projectId: "tec-park",
-  storageBucket: "tec-park.appspot.com",
-  messagingSenderId: "756938005815",
-  appId: "1:756938005815:web:bd733b565872393ac70eb2",
-  measurementId: "G-LHCP2DRZWM"
-   });
-   const db = firebaseApp.firestore();
-   const auth = firebaseApp.auth();
-
-
-
-   const signup=()=>{
-    const email = document.getelementById("email").value;
-    const password = document.getElementById("password").value;
-    console.log(email,password)
-
-   
-    firebase.auth().createUserWithEmailAndPassword(email, password)
-  .then((result) => {
-    // Signed in 
-    document.write("you are Signed Up")
-    console.log(result)
-    // ...
-  })
-  .catch((error) => {
-    onsole.log(error.code);
-    console.log(error.message)
-    // ..
-  });
-   }
-
-
-
-   
-
-
+    
 let signupBtn = document.getElementById("signupBtn"); 
 let signinBtn = document.getElementById("signinBtn"); 
 let nameField = document.getElementById("nameField"); 
 let title = document.getElementById("title");  
+
+signupBtn.onclick = function(){
+    // Redirect to Login_Success.html
+    window.location.href = "Login_Success.html";
+}
 
 signinBtn.onclick = function(){
     nameField.style.maxHeight = "0";
     title.innerHTML = "Sign In";
     signupBtn.classList.add("disable");
     signinBtn.classList.remove("disable");
-}
-
-signupBtn.onclick = function(){
-    nameField.style.maxHeight = "60px";
-    title.innerHTML = "Sign Up";
-    signupBtn.classList.remove("disable");
-    signinBtn.classList.add("disable");
 }
 
 </script>

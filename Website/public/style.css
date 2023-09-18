@@ -45,6 +45,22 @@ h1 {
   background-color: #ffffff;
   color: #000000;
 }
+.btn1{ /* select spot button */
+  background-color: #859bdf;
+  color: white;
+  font-weight: bold;
+  border: 0 ;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  margin: 33rem; /* Add space between buttons */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 20.9375rem;
+  height: 3.4375rem;
+  align-items: flex-end; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+}
+
 
 /*css for sign in page*/
 

@@ -13,7 +13,18 @@ body{
   background-color: #101629;
 }
 
-.indexdiv {
+.indexdiv1 {
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: center; /* Center text vertically */
+  justify-content: center; /* Center text horizontally */
+  height: 40vh; /* Fill the available height */
+  font-size: 30px;
+}
+.indexdiv2 {
   text-align: center;
   color: white;
   margin: 0;
@@ -22,7 +33,10 @@ body{
   flex-direction: column;
   align-items: center; /* Center text vertically */
   justify-content: center; /* Center text horizontally */
-  height: 100vh; /* Fill the available height */
+  height: 40vh; /* Fill the available height */
+}
+.photo{
+  margin-bottom: 50px;
 }
 #tec
 

@@ -67,14 +67,6 @@ h1 {
   justify-content: center; /* Center text horizontally */
 }
 
-.camera {
-  position: absolute;
-  width: 384px;
-  height: 812px;
-  left: -9px;
-  top: 0px;
-  background: url(image.jpg);
-}
 
 /*css for sign in page*/
 

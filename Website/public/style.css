@@ -1,3 +1,8 @@
+body{
+  background-color: #4873f7;
+  ;
+}
+
 #indexbody {
   display: flex;
   flex-direction: column;
@@ -51,7 +56,8 @@ h1 {
   border: 0 ;
   border-radius: 25px;
   font-size: 1.5rem;
-  margin: 33rem; /* Add space between buttons */
+  margin-top: 45.4375rem; /* Add space between buttons */
+  margin-left: 1.25rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
   width: 20.9375rem;
@@ -60,4 +66,43 @@ h1 {
   justify-content: center; /* Center text horizontally */
 }
 
+.camera {
+  position: absolute;
+  width: 384px;
+  height: 812px;
+  left: -9px;
+  top: 0px;
+  background: url(image.jpg);
+}
 
+.bodysuccess{
+  font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 170%;
+text-align: center;
+margin: 30rem;
+color: #E2E9FD;
+}
+
+.heading2{
+text-align: center;
+  font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 150%;
+color: #FFFFFF;
+}
+
+.vector2{
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+left: 26.15%;
+right: 10.15%;
+top: 1%;
+bottom: 25%;
+margin: 3rem;
+}

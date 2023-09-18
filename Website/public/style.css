@@ -37,6 +37,8 @@ body{
 }
 .photo{
   margin-bottom: 50px;
+  border-radius: 30%; /* to make circular logo*/
+  /* object-fit: cover;to cover the img completely in the circle */
 }
 #tec
 

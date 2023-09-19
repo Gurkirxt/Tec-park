@@ -58,7 +58,24 @@ color: #fcf9f9;
     border: 0 ;
     border-radius: 25px;
     font-size: 1.5rem;
-    margin-top: -10rem; /* Add space between buttons */
+    margin-bottom: 2rem; /* Add space between buttons */
+    margin-left: 60rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 20.9375rem;
+    height: 3.4375rem;
+    align-items: flex-end; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+  }
+
+  .btn2{ /* select spot button */
+    background-color: #1336a0;
+    color: white;
+    font-weight: bold;
+    border: 0 ;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    margin-bottom: 5rem; /* Add space between buttons */
     margin-left: 60rem;
     cursor: pointer;
     transition: background-color 0.3s ease;

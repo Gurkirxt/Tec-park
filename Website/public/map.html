@@ -19,14 +19,21 @@ body { margin: 0; padding: 0; }
         container: 'map', // container ID
         // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
         style: 'mapbox://styles/mapbox/navigation-night-v1', // style URL
+        
         center: [76.7794,30.7333], // starting position [lng, lat]
-        zoom: 12 // starting zoom
+        zoom: 20 // starting zoom
     });
 
     if ("geolocation" in navigator) {
         navigator.geolocation.getCurrentPosition(function(position) {
             // Update the map's center with the user's current location
-            map.setCenter([position.coords.longitude, position.coords.latitude]);
+            const userLocation = [position.coords.longitude, position.coords.latitude];
+            map.setCenter(userLocation);
+
+            // Add a custom marker at the user's location
+            new mapboxgl.Marker({ color: 'red' }) // You can customize the marker color and size
+                .setLngLat(userLocation)
+                .addTo(map);
         });
     } else {
         console.log("Geolocation is not available in this browser.");

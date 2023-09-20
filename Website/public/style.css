@@ -51,7 +51,7 @@ h1 {
 }
 
 .btn {
-  background-color: #003ef9;
+  background-color:#4873f7;
   color: white;
   font-weight: bold;
   border: 0 ;
@@ -109,7 +109,7 @@ body{
 .form-box h1{
   font-size: 30px;
   margin-bottom:60px;
-  color: #3c00a0;
+  color:#4873f7;
   position: relative;
 }
 .form-box h1::after{
@@ -117,7 +117,7 @@ body{
   width: 30px;
   height: 4px;
   border-radius: 3px;
-  background: #3c00a0;
+  background:#4873f7;
   position: absolute;
   bottom: -12px;
   left: 50%;
@@ -151,7 +151,7 @@ form p{
 }
 form p a{
   text-decoration: none;
-  color: #3c00a0;
+  color:#4873f7;
 }
 
 .btn-field{
@@ -161,7 +161,7 @@ form p a{
 }
 .btn-field button{
   flex-basis: 48%;
-  background: #3c00a0;
+  background:#4873f7;
   color: #ffffff;
   height: 40px;
   border-radius: 20px;

@@ -86,15 +86,15 @@ window.addEventListener('load', () => {
         //add buttons elements to controls
         const start_btn = document.createElement('button');
         start_btn.classList.add('start');
-        start_btn.innerText = "Start"
+        start_btn.innerText = "Entry"
 
         const stop_btn = document.createElement('button');
         stop_btn.classList.add('stop');
-        stop_btn.innerText = "Stop"
+        stop_btn.innerText = "Exit"
 
         const reset_btn = document.createElement('button');
         reset_btn.classList.add('reset');
-        reset_btn.innerText = "Reset"
+        reset_btn.innerText = "New"
 
         controls_el.appendChild(start_btn);
         controls_el.appendChild(stop_btn);
@@ -106,16 +106,16 @@ window.addEventListener('load', () => {
         task_el.appendChild(actions_el);
 
         //add actions buttons
-        const edit_btn = document.createElement('button');
-        edit_btn.classList.add('edit');
-        edit_btn.innerText = "Edit Task";
+        // const edit_btn = document.createElement('button');
+        // edit_btn.classList.add('edit');
+        // edit_btn.innerText = "Edit Task";
 
-        const delete_btn = document.createElement('button');
-        delete_btn.classList.add('delete');
-        delete_btn.innerText = "Delete Task";
+        // const delete_btn = document.createElement('button');
+        // delete_btn.classList.add('delete');
+        // delete_btn.innerText = "Delete Task";
 
-        actions_el.appendChild(edit_btn);
-        actions_el.appendChild(delete_btn)
+        // actions_el.appendChild(edit_btn);
+        // actions_el.appendChild(delete_btn)
 
         //input value
         input.value = "";

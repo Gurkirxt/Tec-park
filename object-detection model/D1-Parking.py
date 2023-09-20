@@ -207,7 +207,7 @@ while True:
     o = a1 + a2 + a3 + a4 + a5 + a6 + a7 + a8 + a9 + a10 + a11 + a12
     space = 12 - o
     print(space)
-    db.collection("Parking_spaces").document("space_info").set(
+    db.collection("parking_spaces").document("space_info").update(
         {
             "D1parking": space,
         }

@@ -191,11 +191,11 @@
                         const data = doc.data();
                         // Assuming that the button has a unique identifier for each location, e.g., data.id
                             D1spaces.textContent = ` | Spaces available: ${data.D1parking}`;
-                            D1price.textContent = ` | Price: ${data.D1parking}`;
+                            D1price.textContent = ` | Price (Rs.): ${2*data.D1parking}`;
                             C1spaces.textContent = ` | Spaces available: ${data.C1parking}`;
-                            C1price.textContent = ` | Price: ${data.C1parking}`;
+                            C1price.textContent = ` | Price (Rs.): ${2*data.C1parking}`;
                             A1spaces.textContent = ` | Spaces available: ${data.A1parking}`;
-                            A1price.textContent = ` | Price: ${data.A1parking}`;
+                            A1price.textContent = ` | Price (Rs.): ${2*data.A1parking}`;
 
                     });
                 });

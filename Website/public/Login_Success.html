@@ -1,31 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="style_successlogin.css" />
+        <!--<link rel="stylesheet" href="style_successlogin.css" />-->
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            body {
+                background-color: #567df4;
+                background-image: url("./sucess_screen.svg");
+                background-position: center center;
+                height: 100vh;
+            }
+        </style>
         <title>Successfully Logged-In</title>
     </head>
-
-    <body>
-        <div class="success_img">
-            <p>
-                <img src="tick2.png" />
-            </p>
-        </div>
-        <div class="login-suc">
-            <h1>Login Success!</h1>
-        </div>
-        <div class="bodysuccess">
-            <h1>Welcome to Tec-Park!!</h1>
-            <h3>
-                <br />
-
-                Congratulations, you are successfully logged-in
-            </h3>
-
-            <button class="btn2" type="button" onclick="location.href='./main.html'">
-                Know Your Current Location</button
-            >
+    <body id="overlay">
+            <script>
+                document.getElementById('overlay').addEventListener('click', function() {
+                    window.location.href = './main.html'; 
+                });
+            </script>
     </body>
 </html>

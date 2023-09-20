@@ -57,10 +57,16 @@
 
             .locationdata {
                 border: 10px solid red;
-                border-radius: 25px;
-                background-color: ;
+                border-radius: 50px;
                 width: 90vw;
                 height: 10vh;
+                margin: 5vh 2.5vw;
+                margin-left: 5vw;
+            }
+
+            .locationdata span{
+                text-align: center;
+                font-size: large;
             }
         </style>
         <link
@@ -82,11 +88,27 @@
                     id="searchbar"
                 />
                 <button type="button" class="locationdata">
-                    <h1>name</h1>
+                    <span>D-Block Parking</span>
                     <br />
-                    <h2 id="available-spaces">spaces avialable :</h2>
+                    <span id="D1spaces">spaces avialable :</span>
                     <br />
-                    <h2 id="price">Price :</h2>
+                    <span id="D1price">Price :</span>
+                    <br />
+                </button>
+                <button type="button" class="locationdata">
+                    <span>C-Block Parking</span>
+                    <br />
+                    <span id="C1spaces">spaces avialable :</span>
+                    <br />
+                    <span id="C1price">Price :</span>
+                    <br />
+                </button>
+                <button type="button" class="locationdata">
+                    <span>A-Block Parking</span>
+                    <br />
+                    <span id="A1spaces">spaces avialable :</span>
+                    <br />
+                    <span id="A1price">Price :</span>
                     <br />
                 </button>
             </div>
@@ -153,12 +175,16 @@
             const db = firebase.firestore();
 
             // Reference to the Firestore collection
-            const dataCollection = db.collection("occupancy"); // Replace with your collection name
+            const dataCollection = db.collection("parking_spaces"); // Replace with your collection name
 
             // Reference to the HTML element where data will be displayed
             // Reference to the HTML elements
-            const availableSpaces = document.getElementById("available-spaces");
-            const price = document.getElementById("price");
+            const D1spaces = document.getElementById("D1spaces");
+            const D1price = document.getElementById("D1price");
+            const C1spaces = document.getElementById("C1spaces");
+            const C1price = document.getElementById("C1price");
+            const A1spaces = document.getElementById("A1spaces");
+            const A1price = document.getElementById("A1price");
 
             // Function to fetch and update data
             function fetchDataAndUpdate() {
@@ -166,11 +192,13 @@
                     querySnapshot.forEach((doc) => {
                         const data = doc.data();
                         // Assuming that the button has a unique identifier for each location, e.g., data.id
-                        if (data.id === "data1") {
-                            // Replace "your-button-id" with the actual button ID
-                            availableSpaces.textContent = `Spaces available: ${data.occ_total}`;
-                            price.textContent = `Price: ${data.occ_total}`;
-                        }
+                            D1spaces.textContent = `Spaces available: ${data.D1parking}`;
+                            D1price.textContent = `Price: ${data.D1parking}`;
+                            C1spaces.textContent = `Spaces available: ${data.C1parking}`;
+                            C1price.textContent = `Price: ${data.C1parking}`;
+                            A1spaces.textContent = `Spaces available: ${data.A1parking}`;
+                            A1price.textContent = `Price: ${data.A1parking}`;
+
                     });
                 });
             }

@@ -45,22 +45,25 @@
             }
 
             #searchbar {
-                border: 2px solid #ccc;
+                border: 10px solid #4873f7;
+                background-color: #101629;
                 border-radius: 100px; /* This creates the oval shape */
                 padding: 2vh 0vh;
                 width: 90vw; /* Adjust the width as needed */
                 height: 10vh;
                 outline: none;
+                background-color: ;
                 transition: border-color 0.3s ease-in-out;
-                margin-left: 5vw;
+                margin: 2vh 2.5vw;
+                text-align: center;
             }
 
             .locationdata {
                 border: 10px solid #001d72;
-                border-radius: 50px;
+                border-radius: 50rem;
                 width: 90vw;
                 height: 15vh;
-                margin: 5vh 2.5vw;
+                margin: 5vh 1vw;
                 margin-left: 5vw;
                 background-color: #4873f7;
             }
@@ -115,7 +118,7 @@
                 style: "mapbox://styles/mapbox/navigation-night-v1", // style URL
 
                 center: [76.7794, 30.7333], // starting position [lng, lat]
-                zoom: 20, // starting zoom
+                zoom: 15, // starting zoom
             });
 
             if ("geolocation" in navigator) {

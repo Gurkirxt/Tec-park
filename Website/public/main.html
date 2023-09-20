@@ -33,7 +33,7 @@
             }
             #search-data {
                 flex: 1;
-                background-color: white;
+                background-color: #101629;
                 height: 100vh;
                 width: 100vw;
                 margin: 0;
@@ -56,17 +56,18 @@
             }
 
             .locationdata {
-                border: 10px solid red;
+                border: 10px solid #001d72;
                 border-radius: 50px;
                 width: 90vw;
-                height: 10vh;
+                height: 15vh;
                 margin: 5vh 2.5vw;
                 margin-left: 5vw;
+                background-color: #4873f7;
             }
 
             .locationdata span{
                 text-align: center;
-                font-size: large;
+                font-size: x-large;
             }
         </style>
         <link
@@ -87,29 +88,21 @@
                     placeholder="Search your destination"
                     id="searchbar"
                 />
-                <button type="button" class="locationdata">
+                <button type="button" class="locationdata" onclick="location.href='./Parking_detail.html'">
                     <span>D-Block Parking</span>
-                    <br />
-                    <span id="D1spaces">spaces avialable :</span>
-                    <br />
-                    <span id="D1price">Price :</span>
+                    <span id="D1spaces"> | spaces avialable :</span>
+                    <span id="D1price"> | Price :</span>
                     <br />
                 </button>
-                <button type="button" class="locationdata">
+                <button type="button" class="locationdata" onclick="location.href='./Parking_detail.html'">
                     <span>C-Block Parking</span>
-                    <br />
-                    <span id="C1spaces">spaces avialable :</span>
-                    <br />
-                    <span id="C1price">Price :</span>
-                    <br />
+                    <span id="C1spaces"> | spaces avialable :</span>
+                    <span id="C1price"> | Price :</span>
                 </button>
-                <button type="button" class="locationdata">
+                <button type="button" class="locationdata" onclick="location.href='./Parking_detail.html'">
                     <span>A-Block Parking</span>
-                    <br />
-                    <span id="A1spaces">spaces avialable :</span>
-                    <br />
-                    <span id="A1price">Price :</span>
-                    <br />
+                    <span id="A1spaces"> | spaces avialable :</span>
+                    <span id="A1price"> | Price :</span>
                 </button>
             </div>
         </div>
@@ -192,12 +185,12 @@
                     querySnapshot.forEach((doc) => {
                         const data = doc.data();
                         // Assuming that the button has a unique identifier for each location, e.g., data.id
-                            D1spaces.textContent = `Spaces available: ${data.D1parking}`;
-                            D1price.textContent = `Price: ${data.D1parking}`;
-                            C1spaces.textContent = `Spaces available: ${data.C1parking}`;
-                            C1price.textContent = `Price: ${data.C1parking}`;
-                            A1spaces.textContent = `Spaces available: ${data.A1parking}`;
-                            A1price.textContent = `Price: ${data.A1parking}`;
+                            D1spaces.textContent = ` | Spaces available: ${data.D1parking}`;
+                            D1price.textContent = ` | Price: ${data.D1parking}`;
+                            C1spaces.textContent = ` | Spaces available: ${data.C1parking}`;
+                            C1price.textContent = ` | Price: ${data.C1parking}`;
+                            A1spaces.textContent = ` | Spaces available: ${data.A1parking}`;
+                            A1price.textContent = ` | Price: ${data.A1parking}`;
 
                     });
                 });

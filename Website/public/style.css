@@ -12,6 +12,10 @@ body{
   min-width: 40vh;
   background-color: #101629;
 }
+.map{
+  background-color: #4873f7;
+  
+}
 
 .indexdiv1 {
   text-align: center;
